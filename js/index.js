@@ -89,31 +89,19 @@ navColor[3].style.color = 'green';
 navColor[4].style.color = 'green';
 navColor[5].style.color = 'green';
 
-/*const newLink = document.createElement('href');
-newLink.href = "https://www.google.com/";
-document.siteContent.nav.appendChild(newLink);
-
-const addNavigation = document.querySelectorAll('nav');
-addNavigation.href = "https://www.google.com/";
-nav.appendChild(addNavigation);
-
-const newLink = document.createElement('href');
-const node = document.createTextNode("Google");
-newLink.href = "https://www.google.com/";
-newLink.appendChild(node);
 
 
-const node = document.getElementsByTagName('nav a');
-const nodeChild = document.createElement('a');
-nodeChild.href = "https://www.google.com/";
-node.appendChild(nodeChild);
+let newItem = document.createElement("a");
+newItem.textContent = "Google";
+newItem.href = "https://www.google.com/";
+newItem.style.color = 'green';
+
+let newItemTwo = document.createElement("a");
+newItemTwo.textContent = "Search";
+newItemTwo.style.color = 'green';
+
+let parent = document.querySelector("nav");
+parent.appendChild(newItem);
+parent.prepend(newItemTwo);
 
 
-const link = document.createElement('a');
-link.setAttribute('href', 'https://www.google.com/');
-link.setAttribute('name', 'Google');
-*/
-var newNav = document.createElement("nav");
-var newA = document.createElement("a");
-newNav.appendChild(newA);
-newA.innerHTML = "Google";
